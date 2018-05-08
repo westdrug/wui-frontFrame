@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./v3/css/plugins/nouslider/jquery.nouislider.css"/>
+    <link rel="stylesheet" href="./v3/css/plugins/ionRangeSlider/ion.rangeSlider.css"/>
+    <link rel="stylesheet" href="./v3/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css"/>
+    <link rel="stylesheet" href="./v3/css/plugins/switchery/switchery.css"/>
+    <link rel="stylesheet" href="./v3/css/plugins/clockpicker/clockpicker.css"/>
+</head>
+<body>
+    <div class="pageWrap">
+        <h4><span class="c-000">表单高级插件</span></h4>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">旋转输入</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <p>官方API地址：<a href="http://anthonyterrien.com/knob/" target="_blank">http://anthonyterrien.com/knob/</a></p>
+                        <div class="text-center">
+                            <small>简单示例</small>
+                            <br/>
+                            <br/>
+                            <div class="m-r-md inline">
+                                <input type="text" value="75" class="dial m-r-sm" data-fgColor="#1AB394" data-width="100" data-height="100" />
+                            </div>
+                            <div class="m-r-md inline">
+                                <input type="text" value="25" class="dial m-r" data-fgColor="#1AB394" data-width="85" data-height="85" />
+                            </div>
+                            <div class="m-r-md inline">
+                                <input type="text" value="50" class="dial m-r" data-fgColor="#1AB394" data-width="85" data-height="85" />
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <small>动态旋钮输入示例</small>
+                            <br/>
+                            <br/>
+                            <div class="m-r-md inline">
+                                <input type="text" value="75" class="dial m-r-sm" data-fgColor="#ED5565" data-width="85" data-height="85" data-cursor=true data-thickness=.3/>
+                            </div>
+                            <div class="m-r-md inline">
+                                <input type="text" value="25" class="dial m-r" data-fgColor="#ED5565" data-width="85" data-height="85" data-step="1000" data-min="-15000" data-max="15000" data-displayPrevious=true/>
+                            </div>
+                            <div class="m-r-md inline">
+                                <input type="text" value="60" class="dial m-r" data-fgColor="#ED5565" data-width="85" data-height="85" data-angleOffset=-125 data-angleArc=250 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">范围滑块</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <p>官方API地址：<a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/en.html</a></p>
+                        <div class="mt20 pt10">
+                            <div id="drag-fixed" class="slider_red"></div>
+                        </div>
+                        <div class="row mt20">
+                            <div class="col-sm-6">
+                                <p class="font-bold">简单示例</p>
+                                <div id="basic_slider"></div>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-bold">在指定范围内进行选择示例</p>
+                                <div id="range_slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>
+                        滑块
+                    </h3>
+                    <p>
+                        官方API地址：<a href="http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/demo_advanced.html</a>
+                        <br/>
+                        在指定范围内选择
+                    </p>
+                    <div class="mb20 mt20">
+                        <small><strong>示例：</strong> 设置值为0-5000，后缀“+”来表示最大值，人民币符号作为前缀，使用刻度</small>
+                    </div>
+                    <div id="ionrange_1"></div>
+
+                    <div class="mb20 mt20">
+                        <small><strong>示例：</strong> 设置值为0-10，步长：0.1，使用刻度  </small>
+                    </div>
+                    <div id="ionrange_2"></div>
+
+                    <div class="mb20 mt20">
+                        <small><strong>示例：</strong> 设置值微从-50~+50，默认为0， 并使用摄氏度符号作为后缀，使用刻度  </small>
+                    </div>
+                    <div id="ionrange_3"></div>
+
+                    <div class="mb20 mt20">
+                        <small><strong>示例:</strong>使用数组设置滑块值为月数，数组可以使任意长度，滑块将自动适应 </small>
+                    </div>
+                    <div id="ionrange_4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">切换开关</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <p>
+                            官方API地址：<a href="http://www.bootcss.com/p/bootstrap-switch/" target="_blank">http://www.bootcss.com/p/bootstrap-switch/</a>
+                        </p>
+                        <h5>
+                            切换按钮01
+                        </h5>
+                        <p>
+                            给复选按钮加上IOS7风格
+                        </p>
+                        <input type="checkbox" class="js-switch" checked />
+                        <input type="checkbox" class="js-switch_2" checked />
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="js-switch_3" />
+                        <br/>
+                        <br/>
+                        <h6>
+                            切换按钮02
+                        </h6>
+                        <p>
+                            使用css3实现的切换按钮
+                        </p>
+                        <div class="switch">
+                            <div class="onoffswitch">
+                                <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                <label class="onoffswitch-label" for="example1">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="switch">
+                            <div class="onoffswitch">
+                                <input type="checkbox" class="onoffswitch-checkbox" id="example2">
+                                <label class="onoffswitch-label" for="example2">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">捨色器</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label class="font-noraml">普通的16进制颜色</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control colorpicker-demo1" value="#5367ce" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-noraml">作为组件使用</label>
+                            <div class="input-group colorpicker-demo2">
+                                <input type="text" value="" class="form-control" />
+                                <span class="input-group-addon"><i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--捨色器 内容 开始-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">颜色选择</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group colorpicker-component demo demo-auto">
+                        <input type="text" value="" class="form-control" />
+                        <span class="input-group-addon"><i></i></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--捨色器 内容 结束-->
+
+    <!-- JSKnob 旋转输入 -->
+    <script src="./libs/plugins/jsKnob/jquery.knob.js"></script>
+    <!-- NouSlider 范围滑块 -->
+    <script src="./libs/plugins/nouslider/jquery.nouislider.min.js"></script>
+    <!-- IonRangeSlider 指定范围内选择 -->
+    <script src="./libs/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+    <!-- Switchery 切换开关-->
+    <script src="./libs/plugins/switchery/switchery.js"></script>
+    <!-- Color picker 捨色器-->
+    <script src="./libs/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="./libs/plugins/colorpicker/clockpicker.js"></script>
+    <script>
+        $(function() {
+            //旋转输入
+            $(".dial").knob();
+            //范围滑块
+            $("#basic_slider").noUiSlider({
+                start: 40,
+                behaviour: 'tap',
+                connect: 'upper',
+                range: {
+                    'min': 20,
+                    'max': 80
+                }
+            });
+            $("#range_slider").noUiSlider({
+                start: [40, 60],
+                behaviour: 'drag',
+                connect: true,
+                range: {
+                    'min': 20,
+                    'max': 80
+                }
+            });
+            $("#drag-fixed").noUiSlider({
+                start: [40, 60],
+                behaviour: 'drag-fixed',
+                connect: true,
+                range: {
+                    'min': 20,
+                    'max': 80
+                }
+            });
+
+            $("#ionrange_1").ionRangeSlider({
+                type: 'double',
+                prefix: "&yen;",
+                maxPostfix: "+",
+                prettify: false,
+                hasGrid: true,
+                min: 1000000,
+                max: 2000000,
+                grid: true
+            });
+
+            $("#ionrange_2").ionRangeSlider({
+                min: 0,
+                max: 10,
+                type: 'single',
+                step: 0.1,
+                postfix: " 克",
+                prettify: false,
+                hasGrid: true
+            });
+
+            $("#ionrange_3").ionRangeSlider({
+                min: -50,
+                max: 50,
+                from: 0,
+                postfix: "°",
+                prettify: false,
+                hasGrid: true
+            });
+
+            $("#ionrange_4").ionRangeSlider({
+                values: [
+                    "一月", "二月", "三月",
+                    "四月", "五月", "六月",
+                    "七月", "八月", "九月",
+                    "十月", "十一月", "十二月"
+                ],
+                type: 'single',
+                hasGrid: true
+            });
+
+            //切换开关
+            var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, {
+                color: '#1AB394'
+            });
+
+            var elem_2 = document.querySelector('.js-switch_2');
+            var switchery_2 = new Switchery(elem_2, {
+                color: '#ED5565'
+            });
+
+            var elem_3 = document.querySelector('.js-switch_3');
+            var switchery_3 = new Switchery(elem_3, {
+                color: '#1AB394'
+            });
+
+            //捨色器
+            $('.colorpicker-demo1').colorpicker();
+            $('.colorpicker-demo2').colorpicker();
+            $('.colorpicker-demo3').colorpicker();
+
+        })
+    </script>
+</body>
+</html>

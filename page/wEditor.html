@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./libs/plugins/layer/skin/layer.css"/>
+
+    <link href="./v3/css/plugins/summernote/summernote-bs3.css?v=4.1.0" rel="stylesheet">
+</head>
+<body>
+    <div class="pageWrap">
+        <h4><span class="c-000">富文本编辑器</span></h4>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">layer简介</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <p>summernote是一个JavaScript库，可以帮助你创建的所见即所得编辑在线。</p>
+
+                        <p>summernote具有一些特殊的功能：</p>
+
+                        <p class="c-danger">· 二次开发集成了 kity formula 前端数理化公式。</p>
+                        <p class="c-danger">·  Kity Formula 为你提供了一个非常简单的公式呈现和存储方案。</p>
+                        <p class="c-danger">·  生成公式静态数据资源 可跨域存储</p>
+                        <p>· 从剪贴板粘贴图像</p>
+                        <p>· 保存的图像直接使用Base64编码字段的内容，所以你不需要实现所有图像处理</p>
+                        <p>· 简单用户界面</p>
+                        <p>· 所见即所得的交互式编辑</p>
+                        <p>· 与服务器的便捷集成</p>
+                        <hr>
+                        <p>summernote官网网站：<a href="http://summernote.org" class="c-success" target="_blank">http://summernote.org</a>
+                            <br>KityFormula公式官网：<a href="http://gongshi.baidu.com/" class="c-success" target="_blank">http://gongshi.baidu.com/</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">实例</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <div id="summernote" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="./libs/plugins/layer/layer.min.js"></script>
+    <!-- SUMMERNOTE -->
+    <script src="./libs/plugins/summernote/summernote.min.js?v=4.1.0"></script>
+    <script src="./libs/plugins/summernote/summernote-zh-CN.js?v=4.1.0"></script>
+    <script src="./libs/plugins/summernote/summernote-plugins/summernote-ext-emoji-min.js"></script>
+    <script src="./libs/plugins/summernote/kityformula-plugins/kityformula.min.js"></script>
+
+    <!--数据调用-->
+    <script>
+        $(function() {
+
+            //传入表情包路径
+            document.emojiSource = './libs/plugins/summernote/summernote-plugins/pngs/';
+            //富文本编辑器
+            $('#summernote').summernote({
+                height: 400,
+                minHeight: 300,
+                maxHeight: 500,
+                focus: true,
+                lang:'zh-CN',
+                toolbar: [
+                    //表情包
+                    ['misc', ['emoji']],
+                    //公式
+                    ['misc', ['KityFormula']],
+                    //源码模式,//全屏
+                    ["view",["codeview","fullscreen"]],
+
+                    // 样式,序列表,无序列表,段落,行高
+                    ["para",["style","ol","ul","paragraph","height"]],
+
+                    // 链接插入 ,图片上传 ,视频 ,表格, <hr/>
+                    ["insert",["link","picture","myvideo","table","hr"]],
+
+                    // 字体,字体大小,字体颜色,粗体,斜体
+                    ["font",["fontname","fontsize","color","bold","italic"]],
+
+                    //下划线,中划线,居上,居下,清除格式
+                    ["para",["underline","strikethrough","superscript","subscript","clear",""]],
+
+                    // 撤消, 重做 ,帮助文档
+                    ["remove",["undo","redo","help"]]
+                ]
+            })
+        })
+    </script>
+</body>
+</html>

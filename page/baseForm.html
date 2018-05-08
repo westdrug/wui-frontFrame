@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./v3/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="./v3/css/plugins/chosen/chosen.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pageWrap">
+        <h4><span class="c-000">基础表单</span></h4>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">基本</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <div class="">
+                            <h3 class="fs16">登录</h3>
+                            <p><span class="c-999">欢迎登录本站</span></p>
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>用户名</label>
+                                    <input placeholder="请输入您注册的E-mail" class="form-control" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label>密码</label>
+                                    <input placeholder="请输入密码" class="form-control" type="password">
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>登 录</strong></button>
+                                    <label class="">
+                                        <input class="i-checks" checked type="checkbox">自动登录
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">横向</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <form class="form-horizontal">
+                            <p>欢迎登录本站</p>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">用户名：</label>
+
+                                <div class="col-sm-8">
+                                    <input placeholder="用户名" class="form-control" type="email"> <span class="help-block mb20-none">请输入您注册时所填的E-mail</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">密码：</label>
+
+                                <div class="col-sm-8">
+                                    <input placeholder="密码" class="form-control" type="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-8">
+                                    <button class="btn btn-warning" type="submit">登 录</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">内联表单</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <div class="">
+                            <form role="form" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">用户名</label>
+                                    <input type="email" placeholder="请输入用户名" id="exampleInputEmail2" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">密码</label>
+                                    <input type="password" placeholder="请输入密码" id="exampleInputPassword2" class="form-control">
+                                </div>
+                                <div class="checkbox m-l m-r-xs">
+                                    <label class="i-checks">
+                                        <input type="checkbox"><i></i> 自动登录</label>
+                                </div>
+                                <button class="btn btn-white" type="submit">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">弹出表单</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <div class="text-center">
+                            <a data-toggle="modal" class="btn btn-primary" href="baseForm.html#modal-form">打开登录窗口</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">表单元素实例</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <div class="">
+                            <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">普通</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">带说明信息</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control"> <span class="help-block mb20-none">帮助文本，可能会超过一行，以块级元素显示</span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">密码</label>
+
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="password">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提示</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="提示信息" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">禁用</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" disabled="" placeholder="已被禁用" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">静态控制</label>
+
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">i@zi-han.net</p>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label c-999">复选框&amp;单选框
+                                    <br/><small class="text-navy">自定义样式</small>
+                                </label>
+
+                                <div class="col-sm-10">
+                                    <div class="checkbox i-checks">
+                                        <label><input type="checkbox" value=""> <i></i> 选项1</label>
+                                    </div>
+                                    <div class="checkbox i-checks">
+                                        <label>
+                                            <input type="checkbox" value="" checked=""> <i></i> 选项2（选中）</label>
+                                    </div>
+                                    <div class="checkbox i-checks">
+                                        <label>
+                                            <input type="checkbox" value="" disabled="" checked=""> <i></i> 选项3（选中并禁用）</label>
+                                    </div>
+                                    <div class="checkbox i-checks">
+                                        <label>
+                                            <input type="checkbox" value="" disabled=""> <i></i> 选项4（禁用）</label>
+                                    </div>
+                                    <div class="radio i-checks">
+                                        <label>
+                                            <input type="radio" value="option1" name="a"> <i></i> 选项1</label>
+                                    </div>
+                                    <div class="radio i-checks">
+                                        <label>
+                                            <input type="radio" checked="" value="option2" name="a"> <i></i> 选项2（选中）</label>
+                                    </div>
+                                    <div class="radio i-checks">
+                                        <label>
+                                            <input type="radio" disabled="" checked="" value="option2"> <i></i> 选项3（选中并禁用）</label>
+                                    </div>
+                                    <div class="radio i-checks">
+                                        <label>
+                                            <input type="radio" disabled="" name="a"> <i></i> 选项4（禁用）</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">内联复选框</label>
+
+                                <div class="col-sm-10">
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" value="option1">未选中</label>
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" checked="" value="option2">选中</label>
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" disabled="" value="option3">禁用未选中</label>
+                                    <label class="checkbox-inline i-checks">
+                                        <input type="checkbox" checked="" disabled="" value="option3">禁用已选中</label>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">复选框&amp;单选框
+                                    <br/>
+                                    <small class="text-navy">普通Bootstrap元素</small>
+                                </label>
+
+                                <div class="col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">选项1</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">选项1</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">选项2</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">内联复选框</label>
+
+                                <div class="col-sm-10">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1" id="inlineCheckbox1">a</label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2" id="inlineCheckbox2">b</label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option3" id="inlineCheckbox3">c</label>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">自定义Select下拉控件并支持搜索</label>
+
+                                <div class="col-sm-10">
+                                    <div class="input-group wSelectBox">
+                                        <select data-placeholder="选择省份..." class="chosen-select" tabindex="2">
+                                            <option value="">请选择省份</option>
+                                            <option value="110000" hassubinfo="true">北京</option>
+                                            <option value="120000" hassubinfo="true">天津</option>
+                                            <option value="130000" hassubinfo="true">河北省</option>
+                                            <option value="140000" hassubinfo="true">山西省</option>
+                                            <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                                            <option value="210000" hassubinfo="true">辽宁省</option>
+                                            <option value="220000" hassubinfo="true">吉林省</option>
+                                            <option value="230000" hassubinfo="true">黑龙江省</option>
+                                            <option value="310000" hassubinfo="true">上海</option>
+                                            <option value="320000" hassubinfo="true">江苏省</option>
+                                            <option value="330000" hassubinfo="true">浙江省</option>
+                                            <option value="340000" hassubinfo="true">安徽省</option>
+                                            <option value="350000" hassubinfo="true">福建省</option>
+                                            <option value="360000" hassubinfo="true">江西省</option>
+                                            <option value="370000" hassubinfo="true">山东省</option>
+                                            <option value="410000" hassubinfo="true">河南省</option>
+                                            <option value="420000" hassubinfo="true">湖北省</option>
+                                            <option value="430000" hassubinfo="true">湖南省</option>
+                                            <option value="440000" hassubinfo="true">广东省</option>
+                                            <option value="450000" hassubinfo="true">广西壮族自治区</option>
+                                            <option value="460000" hassubinfo="true">海南省</option>
+                                            <option value="500000" hassubinfo="true">重庆</option>
+                                            <option value="510000" hassubinfo="true">四川省</option>
+                                            <option value="520000" hassubinfo="true">贵州省</option>
+                                            <option value="530000" hassubinfo="true">云南省</option>
+                                            <option value="540000" hassubinfo="true">西藏自治区</option>
+                                            <option value="610000" hassubinfo="true">陕西省</option>
+                                            <option value="620000" hassubinfo="true">甘肃省</option>
+                                            <option value="630000" hassubinfo="true">青海省</option>
+                                            <option value="640000" hassubinfo="true">宁夏回族自治区</option>
+                                            <option value="650000" hassubinfo="true">新疆维吾尔自治区</option>
+                                            <option value="710000" hassubinfo="true">台湾省</option>
+                                            <option value="810000" hassubinfo="true">香港特别行政区</option>
+                                            <option value="820000" hassubinfo="true">澳门特别行政区</option>
+                                            <option value="990000" hassubinfo="true">海外</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">自定义Select下拉控件支持多选</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group wSelectBox">
+                                        <select data-placeholder="选择省份..." multiple class="chosen-select" tabindex="3">
+                                            <option value="">请选择省份</option>
+                                            <option value="110000" hassubinfo="true">北京</option>
+                                            <option value="120000" hassubinfo="true">天津</option>
+                                            <option value="130000" hassubinfo="true">河北省</option>
+                                            <option value="140000" hassubinfo="true">山西省</option>
+                                            <option value="150000" hassubinfo="true">内蒙古自治区</option>
+                                            <option value="210000" hassubinfo="true">辽宁省</option>
+                                            <option value="220000" hassubinfo="true">吉林省</option>
+                                            <option value="230000" hassubinfo="true">黑龙江省</option>
+                                            <option value="310000" hassubinfo="true">上海</option>
+                                            <option value="320000" hassubinfo="true">江苏省</option>
+                                            <option value="330000" hassubinfo="true">浙江省</option>
+                                            <option value="340000" hassubinfo="true">安徽省</option>
+                                            <option value="350000" hassubinfo="true">福建省</option>
+                                            <option value="360000" hassubinfo="true">江西省</option>
+                                            <option value="370000" hassubinfo="true">山东省</option>
+                                            <option value="410000" hassubinfo="true">河南省</option>
+                                            <option value="420000" hassubinfo="true">湖北省</option>
+                                            <option value="430000" hassubinfo="true">湖南省</option>
+                                            <option value="440000" hassubinfo="true">广东省</option>
+                                            <option value="450000" hassubinfo="true">广西壮族自治区</option>
+                                            <option value="460000" hassubinfo="true">海南省</option>
+                                            <option value="500000" hassubinfo="true">重庆</option>
+                                            <option value="510000" hassubinfo="true">四川省</option>
+                                            <option value="520000" hassubinfo="true">贵州省</option>
+                                            <option value="530000" hassubinfo="true">云南省</option>
+                                            <option value="540000" hassubinfo="true">西藏自治区</option>
+                                            <option value="610000" hassubinfo="true">陕西省</option>
+                                            <option value="620000" hassubinfo="true">甘肃省</option>
+                                            <option value="630000" hassubinfo="true">青海省</option>
+                                            <option value="640000" hassubinfo="true">宁夏回族自治区</option>
+                                            <option value="650000" hassubinfo="true">新疆维吾尔自治区</option>
+                                            <option value="710000" hassubinfo="true">台湾省</option>
+                                            <option value="810000" hassubinfo="true">香港特别行政区</option>
+                                            <option value="820000" hassubinfo="true">澳门特别行政区</option>
+                                            <option value="990000" hassubinfo="true">海外</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Select</label>
+
+                                <div class="col-sm-10">
+                                    <select class="form-control mb20" name="account">
+                                        <option>选项 1</option>
+                                        <option>选项 2</option>
+                                        <option>选项 3</option>
+                                        <option>选项 4</option>
+                                    </select>
+
+                                    <div class="col-sm-4 m-l-n">
+                                        <select class="form-control" multiple="">
+                                            <option>选项 1</option>
+                                            <option>选项 2</option>
+                                            <option>选项 3</option>
+                                            <option>选项 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group has-success">
+                                <label class="col-sm-2 control-label">验证通过</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group has-warning">
+                                <label class="col-sm-2 control-label">未填写</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group has-error">
+                                <label class="col-sm-2 control-label">验证未通过</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">自定义尺寸</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder=".input-lg" class="form-control input-lg mb20">
+                                    <input type="text" placeholder="Default input" class="form-control mb20">
+                                    <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">列尺寸</label>
+
+                                <div class="col-sm-10">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <input type="text" placeholder=".col-md-2" class="form-control">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" placeholder=".col-md-3" class="form-control">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" placeholder=".col-md-4" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">文本框组</label>
+
+                                <div class="col-sm-10">
+                                    <div class="input-group mb20"><span class="input-group-addon">@</span>
+                                        <input type="text" placeholder="用户名" class="form-control">
+                                    </div>
+                                    <div class="input-group mb20">
+                                        <input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="input-group mb20"><span class="input-group-addon">&yen;</span>
+                                        <input type="text" class="form-control"> <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="input-group mb20"><span class="input-group-addon"> <input type="checkbox"> </span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="input-group"><span class="input-group-addon"> <input type="radio"> </span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">按钮插件</label>
+
+                                <div class="col-sm-10">
+                                    <div class="input-group mb20"><span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary">搜</button> </span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"> <span class="input-group-btn"> <button type="button" class="btn btn-primary">搜索
+                                    </button> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">带下拉框</label>
+
+                                <div class="col-sm-10">
+                                    <div class="input-group mb20">
+                                        <div class="input-group-btn">
+                                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">操作 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="form_basic.html#">选项1</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项2</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项3</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="form_basic.html#">选项4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+
+                                        <div class="input-group-btn">
+                                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">操作 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li><a href="form_basic.html#">选项1</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项2</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项3</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="form_basic.html#">选项4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">分段</label>
+
+                                <div class="col-sm-10">
+                                    <div class="input-group mb20">
+                                        <div class="input-group-btn">
+                                            <button tabindex="-1" class="btn btn-white" type="button">操作</button>
+                                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="form_basic.html#">选项1</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项2</a>
+                                                </li>
+                                                <li><a href="form_basic.html#">选项3</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="form_basic.html#">选项4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+
+                                        <div class="input-group-btn">
+                                            <button tabindex="-1" class="btn btn-white" type="button">操作</button>
+                                            <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button"><span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right">
+                                                分段
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <button class="btn btn-white" type="submit">取消</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--弹出表单内容 开始-->
+    <div id="modal-form" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 b-r">
+                            <h3 class="m-t-none mb20">登录</h3>
+
+                            <p>欢迎登录本站(⊙o⊙)</p>
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>用户名：</label>
+                                    <input type="email" placeholder="请输入用户名" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>密码：</label>
+                                    <input type="password" placeholder="请输入密码" class="form-control">
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>登录</strong>
+                                    </button>
+                                    <label>
+                                        <input type="checkbox" class="i-checks">自动登录</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>还不是会员？</h4>
+                            <p>您可以注册一个账户</p>
+                            <p class="text-center">
+                                <a href="baseForm.html" class="c-333" style="font-size: 108px">Wui</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹出表单内容 结束-->
+
+    <!-- iCheck 单选/多选控件-->
+    <script src="./libs/plugins/iCheck/icheck.min.js"></script>
+    <!-- chosen 下拉控件 -->
+    <script src="./libs/plugins/chosen/chosen.jquery.js"></script>
+    <script>
+        $(function () {
+            //单选，多选择
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green'
+            });
+            //下拉 select
+            var config = {
+                '.chosen-select': {},
+                '.chosen-select-deselect': {
+                    allow_single_deselect: true
+                },
+                '.chosen-select-no-single': {
+                    disable_search_threshold: 10
+                },
+                '.chosen-select-no-results': {
+                    no_results_text: '额... 没有发现!'
+                },
+                '.chosen-select-width': {
+                    width: "95%"
+                }
+            }
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+            }
+        })
+    </script>
+</body>
+</html>

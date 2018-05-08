@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="zh-CN"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"lang="zh-CN"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"lang="zh-CN"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Wui-268</title>
+    <meta name="author" content=""/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- <meta name="description" content=""> -->
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- IOS6全屏 Chrome高版本全屏
+    ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== -->
+    <meta name="renderer" content="webkit">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- CSS
+    ================================================== -->
+    <link href="v3/bootstrap/bootstrap.min.css?v=3.3.6" rel="stylesheet" type="text/css">
+    <link href="v3/font-awesome_4.4.0/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css">
+    <link href="v3/css/wstyle.css?v1.1.0" rel="stylesheet" type="text/css">
+    <link href="v3/css/Wui.css?v1.1.0" rel="stylesheet" type="text/css">
+
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 8]>
+    <p class="browsehappy"><i class="fa fa-exclamation-circle"></i> 你的浏览器 <strong>太古老</strong> 了， 请 <a href="#">升级你的浏览器</a> 才能保证数据安全和体验丰富网站内容</p>
+    <![endif]-->
+    <header id="wui-header">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header pl10">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript: void(0)">Wui-268</a>
+                    <small class="ml10 mt20 slogan">WEB界面工具组件库</small>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">示例</a></li>
+                        <li><a href="#">文档</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid ele-container">
+        <div class="menu-wrap">
+            <div class="menu">
+                <h5 class="pt10"><span>MENU</span></h5>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-caret-right"></i> UI元素
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="colorSize" class="active menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>间距字号颜色</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="typography" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>排版</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="fontAwesome" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>字体图标</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="buttons" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>按钮</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="baseItems" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>基本元素</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="tabsPanels" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>选项卡/面板</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="notifications" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>通知提示</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="badgesLabels" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>徽章/标签/进度条</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="gridSystem" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>响度式栅格系统</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="spinners" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>加载动画CSS3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa fa-caret-right"></i> 表格/表单
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="baseTables" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>基础表格</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="baseForm" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>基础表单</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="formValidate" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>表单验证</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="formAdvanced" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>高级插件</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fa fa-caret-right"></i> 组件/模块
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="layModal" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>模态弹出框</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="fileUpload" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>文件上传</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="formAvatar" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>头像裁切</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="suggest" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>搜索自动补全</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="layerDate" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>日期时间</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="avideo" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>音频/视频</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="calendar" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>日历</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="wEditor" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>富文本编辑器</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="wSlider" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>图片幻灯片</a></li>
+                                    <li class="list-group-item"><a href="javascript: ;" data-id="echarts" class="menu-link"><aside class="pull-right"><i class="fa fa-angle-right"></i></aside>数据图表</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <!--主内容区域 开始-->
+            <article id="main-wrap" class="main-wrap">
+                <!--加载 状态 开始-->
+                <aside class="pageLoading">
+                    <span class="pLoading"></span>
+                </aside>
+                <!--加载 状态 结束-->
+            </article>
+            <!--主内容区域 结束-->
+        </div>
+    </div>
+
+    <!--全局 js-->
+    <script src="libs/jquery_1.11.1/jquery.min.js?v=1.11.1"></script>
+    <script src="libs/bootstrap_3.3.0/bootstrap.min.js?v=3.3.0"></script>
+    <script src="libs/wlay/load.js?v1.1.0"></script>
+    <script>
+        $(function() {
+            loadEle.fn.init({callback: function() {}})
+        })
+    </script>
+</body>
+</html>

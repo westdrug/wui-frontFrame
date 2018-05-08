@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./v3/css/plugins/plyr/plyr.css"/>
+</head>
+<body>
+    <div class="pageWrap">
+        <h4><span class="c-000">视频/音频组件</span></h4>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">HTML5 多媒体播放器</a></legend></fieldset>
+                    </div>
+                    <div class="ml20 mr20">
+                        <p>官网地址：<a href="https://plyr.io/" target="_blank">https://plyr.io/</a></p>
+                        <p>Plyr 是一个使用 HTML5 开发的基于浏览器上的多媒体播放器。支持自定义的播放控制和&nbsp;WebVTT 字幕。</p>
+                        <p>特性：</p>
+                        <ul>
+                            <li>
+                                <p><strong>可访问性</strong> - 完全支持字幕和屏幕阅读器</p>
+                            </li>
+                            <li>
+                                <p><strong>轻量级</strong> - 压缩后只有 4.8Kb</p>
+                            </li>
+                            <li>
+                                <p><strong>可定制</strong> - 外观可以根据需要进行调整</p>
+                            </li>
+                            <li>
+                                <p><strong>语义化</strong> - 使用 HTML5 的输入框进行音量和进度的调整</p>
+                            </li>
+                            <li>
+                                <p><strong>快速响应</strong> - 就像你预期的那样</p>
+                            </li>
+                            <li>
+                                <p><strong>音频和视频</strong>- 支持视频和纯音频</p>
+                            </li>
+                            <li>
+                                <p><strong>API</strong>&nbsp;- 易用 API</p>
+                            </li>
+                            <li>
+                                <p><strong>向下兼容</strong> - 如果浏览器不支持，则自动使用内建播放器</p>
+                            </li>
+                            <li>
+                                <p><strong>全屏支持</strong> -支持原生全屏和退出全屏</p>
+                            </li>
+                            <li>
+                                <p><strong>无依赖</strong> - 使用原生 JS 编写，不需要jQuery</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">视频实例</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <div class="player">
+                            <video poster="./v3/css/plugins/plyr/plyr.jpg" controls crossorigin>
+                                <!-- Video files -->
+                                <source src="https://cdn.selz.com/plyr/1.0/movie.mp4" type="video/mp4">
+                                <source src="https://cdn.selz.com/plyr/1.0/movie.webm" type="video/webm">
+                                <!-- Text track file -->
+                                <track kind="captions" label="English" srclang="en" src="https://cdn.selz.com/plyr/1.0/example_captions_en.vtt" default></track>
+                                <!-- Fallback for browsers that don't support the <video> element -->
+                                <a href="https://cdn.selz.com/plyr/1.0/movie.mp4">Download</a>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">音频实例</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <div class="player">
+                            <audio controls>
+                                <!-- Audio files -->
+                                <source src="http://music.baidu.com/cms/app/muplayer/test_mp3/1.mp3" type="audio/mp3">
+
+                                <!-- Fallback for browsers that don't support the <audio> element -->
+                                您的浏览器不支持在线播放，请<a href="http://music.baidu.com/cms/app/muplayer/test_mp3/1.mp3">下载</a>
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        (function (d, u) {
+            var a = new XMLHttpRequest(),
+                    b = d.body;
+
+            // Check for CORS support
+            // If you're loading from same domain, you can remove the if statement
+            if ("withCredentials" in a) {
+                a.open("GET", u, true);
+                a.send();
+                a.onload = function () {
+                    var c = d.createElement("div");
+                    c.setAttribute("hidden", "");
+                    c.innerHTML = a.responseText;
+                    b.insertBefore(c, b.childNodes[0]);
+                }
+            }
+        })(document, "./v3/css/plugins/plyr/sprite.svg");
+    </script>
+    <!-- Plyr core script -->
+    <script src="./libs/plugins/plyr/plyr.js"></script>
+    <script>
+        plyr.setup();
+    </script>
+</body>
+</html>

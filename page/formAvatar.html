@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./v3/css/plugins/cropper/cropper.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="pageWrap">
+        <h4><span class="c-000">头像裁切</span></h4>
+        <div class="mb20">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-title">
+                        <fieldset><legend><a class="fs18">图片裁剪</a></legend></fieldset>
+                    </div>
+                    <div>
+                        <p>官方API地址：<a href="http://fengyuanchen.github.io/cropper/" target="_blank">http://fengyuanchen.github.io/cropper/</a></p>
+                        <p class="c-999">一款简单的jQuery图片裁剪插件 </p>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="image-crop">
+                                        <img src="v3/img/pics/a3.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <h4>图片预览：</h4>
+                                    <div class="img-preview img-preview-sm"></div>
+                                    <h4>说明：</h4>
+                                    <p>
+                                        你可以选择新图片上传，然后下载裁剪后的图片
+                                    </p>
+                                    <div class="btn-group">
+                                        <label title="上传图片" for="inputImage" class="btn btn-primary">
+                                            <input type="file" accept="image/*" name="file" id="inputImage" class="hide"> 上传新图片
+                                        </label>
+                                        <label title="下载图片" id="download" class="btn btn-primary">下载</label>
+                                    </div>
+                                    <h4>其他说明：</h4>
+                                    <p>
+                                        你可以使用<code>$({image}).cropper(options)</code>来配置插件
+                                    </p>
+                                    <div class="btn-group">
+                                        <button class="btn btn-white" id="zoomIn" type="button">放大</button>
+                                        <button class="btn btn-white" id="zoomOut" type="button">缩小</button>
+                                        <button class="btn btn-white" id="rotateLeft" type="button">左旋转</button>
+                                        <button class="btn btn-white" id="rotateRight" type="button">右旋转</button>
+                                        <button class="btn btn-warning" id="setDrag" type="button">裁剪</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image cropper -->
+    <script src="./libs/plugins/cropper/cropper.min.js"></script>
+    <script>
+        $(function() {
+            var $image = $(".image-crop > img")
+                $($image).cropper({
+                    aspectRatio: 1.618,
+                    preview: ".img-preview",
+                    done: function (data) {
+                        // 输出结果
+                    }
+                });
+            var $inputImage = $("#inputImage");
+            if (window.FileReader) {
+                $inputImage.change(function () {
+                    var fileReader = new FileReader(),
+                            files = this.files,
+                            file;
+
+                    if (!files.length) {
+                        return;
+                    }
+
+                    file = files[0];
+
+                    if (/^image\/\w+$/.test(file.type)) {
+                        fileReader.readAsDataURL(file);
+                        fileReader.onload = function () {
+                            $inputImage.val("");
+                            $image.cropper("reset", true).cropper("replace", this.result);
+                        };
+                    } else {
+                        showMessage("请选择图片文件");
+                    }
+                });
+            } else {
+                $inputImage.addClass("hide");
+            }
+
+            $("#download").click(function () {
+                window.open($image.cropper("getDataURL"));
+            });
+
+            $("#zoomIn").click(function () {
+                $image.cropper("zoom", 0.1);
+            });
+
+            $("#zoomOut").click(function () {
+                $image.cropper("zoom", -0.1);
+            });
+
+            $("#rotateLeft").click(function () {
+                $image.cropper("rotate", 45);
+            });
+
+            $("#rotateRight").click(function () {
+                $image.cropper("rotate", -45);
+            });
+
+            $("#setDrag").click(function () {
+                $image.cropper("setDragMode", "crop");
+            });
+        })
+    </script>
+</body>
+</html>
